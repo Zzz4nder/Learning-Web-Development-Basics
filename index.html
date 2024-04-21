@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="textyle.min.js"></script>
+    </script>
+    <script src="index.js"></script>
     <title>Home</title>
     <nav>
       <ul>
@@ -11,42 +18,80 @@
         <li>
           <a href="study_abroad.html">My Expereince</a>
           <ul class="dropdown">
-            <li><a href="Paris.html">Paris, France</a></li>
+            <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
           </ul>
         </li>
 
-        <li><a href="Uncc.html">Study Abroad</a></li>
+        <li><a href="Uncc.html">UNCC Study Abroad</a></li>
         <li><a href="Requirements.html">Help/Requirments</a></li>
       </ul>
     </nav>
   </head>
   <body>
     <div class="banner">
-      <h2 >Learn Globally, Grow Limitlessly      </h2>
+      <h1 class="ex1">Learn Globally, Grow Limitlessly</h1>
     </div>
     <div class="info">
-    <h1>Welcome!</h1>
-    <p>
-      Hello My Name is Natalie and welcome to my Guide to Study Aborad at UNCC!
-      Here you can find how the requirements/where to start if you want to study
-      aborad, My Experience studying aborad and where to get some culture
-      expereinces without leaving our campus!
-    </p>
-    <p>For the past two years, I have been a member of the Global Engagement Scholars Program. I joined the GESP to learn more about different cultures and gain better cultural awareness including a deeper understanding of the world. 
-
-      Throughout my journey in the GESP, I have developed a wide intercultural understanding through the three different components of this program which includes an international academic course, co-curricular activities, and an international engagement experience. For the academic course component, I learned more in-depth about global social science and anthropology. For the co-curricular activities segment, I participated in various international events at UNC Charlotte. For the international engagement experience, I studied abroad in France and Croatia.</p>
+      <h2 class="section-title">Welcome!</h1>
+      <p class="text">
+        Hello welcome to my Guide to Study Aborad at UNCC! Here you can find how
+        the requirements/where to start if you want to study aborad, My
+        Experience studying aborad and where to get some culture expereinces
+        without leaving our campus!
+      </p>
+      <p class="text">
+        For the past two years, I have been a member of the Global Engagement
+        Scholars Program. I joined the GESP to learn more about different
+        cultures and gain better cultural awareness including a deeper
+        understanding of the world. Throughout my journey in the GESP, I have
+        developed a wide intercultural understanding through the three different
+        components of this program which includes an international academic
+        course, co-curricular activities, and an international engagement
+        experience. For the academic course component, I learned more in-depth
+        about global social science and anthropology. For the co-curricular
+        activities segment, I participated in various international events at
+        UNC Charlotte. For the international engagement experience, I studied
+        abroad in France and Croatia.
+      </p>
     </div>
-    <div class="side-photos">
-      <div class="left-photo">
-        <img src="Photos/France.png" alt="">
-        <p>Testing</p>
-      </div>
-      <div class="right-photo">
-        <img src="Photos/Croatia.png" alt="">
-        <p>Testing 2</p>
-      </div>
-
+    <div class="index-photos">
+    <figure>
+        <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="5000">
+          <img src="Photos/Paris1.png" alt="" />
+          <img src="Photos/Paris2.png" alt="" />
+          <img src="Photos/Paris3.png" alt="" />
+        <figcaption><a href="/France.html"  id="France">France</a></figcaption>
+      </figure>
+      <figure>
+        <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="5000">
+          <img src="Photos/Croatia1.png" alt="" />
+          <img src="Photos/Croatia2.png" alt="" />
+          <img src="Photos/Croatia3.png" alt="" />
+        </div>
+        <figcaption><a href="/Croatia.html" id="Croatia">Croatia</a></figcaption>
+    </figure>
+  </div>
+    <div class="about-me">
+      <h3 class="section-title">About Me</h3>
+      <p class="text">
+        My name is Natalie Torres. I am a senior at UNC Charlotte majoring in
+        Marketing and minoring in International Management. My passions are
+        music, meeting new people, traveling, trying new food, and volunteering
+        in the community.
+      </p>
+      <p class="text">
+        This website will provide insight into my cultural experiences both
+        abroad and at UNC Charlotte. I will cover my experince abroad in Paris,
+        France and Dubrovnik, Croatia. Lastly how you can study abroad and
+        experince culturals here at the University of North Carolina at
+        Charlotte.
+      </p>
+      <p class="text">
+        I hope this site can inspire others to consider studying abroad and
+        explore other cultures. I believe it is very important to be open-minded
+        and accepting of cultural differences.
+      </p>
     </div>
   </body>
 </html>

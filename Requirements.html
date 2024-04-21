@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#accordion").accordion({
+          heightStyle: "content",
+          collapsible: true,
+        });
+      });
+    </script>
     <title>Home</title>
     <nav>
       <ul>
@@ -11,14 +26,64 @@
         <li>
           <a href="study_abroad.html">My Expereince</a>
           <ul class="dropdown">
-            <li><a href="Paris.html">Paris, France</a></li>
+            <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
           </ul>
         </li>
 
-        <li><a href="Uncc.html">Study Abroad</a></li>
+        <li><a href="Uncc.html">UNCC Study Abroad</a></li>
         <li><a href="Requirements.html">Help/Requirments</a></li>
       </ul>
     </nav>
   </head>
+  <body>
+    <p>This is taken from the uncc application process</p>
+    <div id="accordion">
+      <h3>Complete Study Aborad 101</h3>
+      <div>
+        <p>
+          This is the first step to study abroad. You must take a free canvas
+          course to undertand how to study board and what UNCC offers.
+        </p>
+      </div>
+      <h3>Research Your Study Aborad Program</h3>
+      <div>
+        <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
+          porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non
+          quam. In suscipit faucibus urna.
+        </p>
+      </div>
+      <h3>Meet with a Education Aborad Advisor</h3>
+      <div>
+        <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+          lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+          Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
+          commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis
+          leo purus venenatis dui.
+        </p>
+      </div>
+      <h3>Apply</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

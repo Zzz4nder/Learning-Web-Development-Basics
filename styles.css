@@ -1,30 +1,97 @@
 body,
+/* ~~~~~~~~~~~~~~~~~~~ Page style ~~~~~~~~~~~~~~~~~~~ */
 html {
   margin: 0;
   /* padding: 0;
   box-sizing: border-box; */
-  background-color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #EA9999;
+  background-color: #ffffff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #ea9999;
 }
-/* Nav Bar */
-/* nav{
-  display: flexbox;
-} */
+
+/* Classed Used for all titles */
+.section-title {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+}
+/* Classed Used for all text */
+.text {
+  text-align: center;
+  padding-bottom: 50px;
+  padding: 0px 15%;
+  padding-bottom: 2%;
+  margin: 0px auto;
+  font-size: 18px;
+}
+/* ~~~~~~~~~~~~~~~~~~~ For image Groups ~~~~~~~~~~~~~~~~~~~ */
+figure {
+  padding: 0px;
+  margin: 0px;
+  width: fit-content;
+  /* border: #d68888 solid 2px; */
+  /* height: 600px; */
+}
+figcaption {
+  width: auto;
+}
+figcaption a {
+  all: unset;
+}
+figcaption a:hover {
+  all: unset;
+}
+figure img {
+  padding: 0;
+  margin: 0;
+}
+/* Change collems for page */
+.index-photos {
+  column-count: 2;
+  display: block;
+  /* padding-left: 22%; */
+  width: fit-content;
+  text-align: center;
+  margin: 0px auto;
+}
+.index-photos img {
+  height: 400px;
+}
+.index-photos figcaption {
+  font-size: 35px;
+  font-weight: bold;
+  border: #d68888 solid 3px;
+}
+.uncc-photos {
+  column-count: 3;
+  /* column-fill: auto; */
+  display: block;
+  width: fit-content;
+  text-align: center;
+  /* position: relative; */
+  /* top: 50%;
+  left: 6%; */
+  margin: 0px auto;
+  border: #d68888 solid;
+}
+.uncc-photos img {
+  width: 350px;
+}
+/* ~~~~~~~~~~~~~~~~~~~ Nav Bar ~~~~~~~~~~~~~~~~~~~ */
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #EA9999;
+  background-color: #ea9999;
   font-size: 15 px;
   font-weight: bold;
   text-decoration: none;
 }
-a{
+a {
   text-decoration: none;
-  color: black;
-  background-color: #EA9999;
+  color: white;
+  background-color: #ea9999;
 }
 ul li {
   position: relative;
@@ -50,7 +117,7 @@ ul li ul.dropdown {
   display: none;
 }
 a:hover {
-  background-color: #d68888 ;
+  background-color: #d68888;
 }
 
 ul li:hover ul.dropdown {
@@ -58,9 +125,59 @@ ul li:hover ul.dropdown {
 }
 /* End Of Nav Bar */
 
+/* ~~~~~~~~~~~~~~~~~~~ Index.html  ~~~~~~~~~~~~~~~~~~~*/
+.info {
+  text-align: center;
+  padding-bottom: 50px;
+  padding: 0px 30px;
+  font-size: 18px;
+}
+
+.photo-container {
+  display: flex;
+  margin: 1px auto;
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+}
+.about-me {
+  text-align: center;
+  padding-bottom: 50px;
+  padding: 0px 30px;
+  font-size: 18px;
+}
+
+.banner {
+  background-image: url(/Photos/croatiaBanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+.banner h1 {
+  text-align: center;
+  margin: auto;
+  padding: 9%;
+  font-size: 45px;
+  font-family: Helvetica;
+}
+
+/* Class for animaiton */
+
+.ex1 {
+  opacity : 0;
+  span {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+  }
+}
+/* End of Index.html */
+
+/* ~~~~~~~~~~~~~~~~~~~ study_abroad.html ~~~~~~~~~~~~~~~~~~~ */
 .TopText {
   margin: 20px;
-  color: white;
+  color: #ea9999;
 }
 .TopText h1 {
   font-size: 60px;
@@ -72,63 +189,71 @@ ul li:hover ul.dropdown {
 }
 
 /* Text and image here */
+.textbody {
+  display: inline;
+  width: 0px auto;
+  border: solid black;
+}
 .textbody > .wrapper {
-  display: inline-flex;
+  display: flex;
+  width: 100%;
 }
 
 .wrapper {
-  display: flex;
-  margin: 20px;
+  display: block;
+  width: 0px auto;
+  border: #d68888 solid;
 }
-/* img {
+.wrapper img {
   max-width: 320px;
-  float: left;
-  border: 3px solid white;
+  border: 3px solid #ea9999;
   border-radius: 10px;
-  margin-right: 15px;
-  margin-left: 15px;
-} */
-.text {
-  color: white;
 }
-.text h2 {
-  font-size: 42px;
+#left-photo {
+  float: left;
+  width: 250px;
 }
-.text p {
+#right-photo {
+  float: right;
+  width: 250px;
+}
+.textbody {
+  display: inline-flex;
+  /* border: 3px solid #ea9999; */
+
+  height: fit-content;
+}
+.side-text {
+  color: #ea9999;
+}
+.side-text p {
   font-size: 20px;
 }
-.text a {
-  text-decoration: none;
-  color: inherit;
+.side-text h2 {
+  font-size: 42px;
+  color: #ea9999;
 }
-/* .text a:hover {
-  text-decoration: none;
-  color: none;
-  text-decoration: none;
+
+.testing {
+  margin: 0px 20px;
+}
+
+.wrapper1 {
+  display: inline-flex;
+  width: 0px auto;
+  text-align: center;
+}
+.wrapper2 {
+  display: inline-flex;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~ France.html ~~~~~~~~~~~~~~~~~~~ */
+
+.time {
+  background-color: #d68888;
+  color: white;
+  display: table;i
+}
+/* .time-row{
+  display: table-cell;
 } */
-.info{
-  text-align: center;
-}
-
-.side-photos{
-  display: flex;
-  margin: 1px auto;
-  width: 75%;
-  border: 1px solid black;
-  text-align: center;
-}
-.left-photo{
-  width: fit-content;
-  border: 1px solid black;
-  align-self: center;
-}
-
-.right-photo{
-  width: fit-content;
-  border: 1px solid black;
-}
-
-img{
-  width: 75%;
-  height: auto;
-}
