@@ -1,5 +1,5 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Page style ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body,
-/* ~~~~~~~~~~~~~~~~~~~ Page style ~~~~~~~~~~~~~~~~~~~ */
 html {
   margin: 0;
   /* padding: 0;
@@ -22,7 +22,7 @@ html {
   padding: 0px 15%;
   padding-bottom: 2%;
   margin: 0px auto;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 /* Class for animaiton Header*/
@@ -36,7 +36,7 @@ html {
     opacity: 0;
   }
 }
-/* ~~~~~~~~~~~~~~~~~~~ For image Groups ~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~For image Groups ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 figure {
   padding: 0px;
   margin: 0px;
@@ -52,6 +52,7 @@ figcaption a {
 }
 figcaption a:hover {
   all: unset;
+  text-decoration: underline;
 }
 figure img {
   padding: 0;
@@ -89,7 +90,7 @@ figure img {
 .uncc-photos img {
   width: 350px;
 }
-/* ~~~~~~~~~~~~~~~~~~~ Nav Bar ~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nav Bar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 ul {
   list-style: none;
   margin: 0;
@@ -137,19 +138,30 @@ ul li:hover ul.dropdown {
 }
 /* End Of Nav Bar */
 
-/* ~~~~~~~~~~~~~~~~~~~ Index.html  ~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+footer {
+  position: relative;
+  height: 4em;
+  background-color: #ea9999;
+  color: white;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Index.html  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .info {
   text-align: center;
   padding-bottom: 50px;
   padding: 0px 30px;
   font-size: 18px;
 }
-
 .photo-container {
   display: flex;
   margin: 1px auto;
   width: 50%;
-  border: 1px solid black;
   text-align: center;
 }
 .about-me {
@@ -159,18 +171,19 @@ ul li:hover ul.dropdown {
   font-size: 18px;
 }
 
-.banner {
+.banner-index {
   background-image: url(Photos/CroatiaBanner.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
+  display: flex;
+  justify-content: center;
 }
-.banner h1 {
-  text-align: center;
+.banner-index h1 {
   margin: auto;
-  padding: 9%;
   font-size: 45px;
   font-family: Helvetica;
+  text-shadow: white;
 }
 
 .index-photos img {
@@ -179,7 +192,7 @@ ul li:hover ul.dropdown {
 }
 /* End of Index.html */
 
-/* ~~~~~~~~~~~~~~~~~~~ study_abroad.html ~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~study_abroad.html ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .TopText {
   margin: 20px;
   color: #ea9999;
@@ -190,75 +203,177 @@ ul li:hover ul.dropdown {
 }
 .TopText p {
   text-align: center;
-  font-size: 25px;
+  font-size: 32px;
 }
 
 /* Text and image here */
-.textbody {
-  display: inline;
-  width: 0px auto;
-  border: solid black;
-}
-.textbody > .wrapper {
-  display: flex;
-  width: 100%;
-}
 
-.wrapper {
-  display: block;
-  width: 0px auto;
-  border: #d68888 solid;
-}
-.wrapper img {
-  max-width: 320px;
-  border: 3px solid #ea9999;
-  border-radius: 10px;
-}
-#left-photo {
-  float: left;
-  width: 250px;
-}
-#right-photo {
-  float: right;
-  width: 250px;
-}
-.textbody {
+#bottom-text {
   display: inline-flex;
-  /* border: 3px solid #ea9999; */
+}
 
-  height: fit-content;
+.inside-text {
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
 }
-.side-text {
-  color: #ea9999;
-}
-.side-text p {
-  font-size: 20px;
-}
-.side-text h2 {
+.inside-text > a > h2 {
   font-size: 42px;
   color: #ea9999;
 }
-
-.testing {
-  margin: 0px 20px;
+.inside-text > a :hover {
+  text-decoration: underline;
+  font-size: 50px;
 }
-
-.wrapper1 {
-  display: inline-flex;
-  width: 0px auto;
-  text-align: center;
+#seperate-padding {
+  padding-bottom: 50px;
 }
-.wrapper2 {
-  display: inline-flex;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~ France.html ~~~~~~~~~~~~~~~~~~~ */
-
-.time {
-  background-color: #d68888;
-  color: white;
-  display: table;
-}
-/* .time-row{
-  display: table-cell;
+/* .wrapper img {
+  max-width: 320px;
+  border: 3px solid #ea9999;
+  border-radius: 10px;
 } */
+.side-photo {
+  margin: 0px 35px;
+  width: 400px;
+  border: 3px solid #ea9999;
+  border-radius: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~France.html & Croatia.html ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#City-Top {
+  padding: 25px 0;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#City-Top > img {
+  height: 350px;
+}
+
+#City-Top-text {
+  flex-direction: column;
+  text-align: center;
+  width: 35%;
+  margin: 0 35px;
+}
+#City-Top-text > h2 {
+  padding: 18px 0;
+  margin: 10px;
+  border-style: solid none;
+  text-decoration: none;
+  font-size: 35px;
+}
+#City-Top-text > p {
+  margin: 0 35px;
+  padding: 0px;
+  padding-top: 25px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Middle ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.City-Middle-Title {
+  background-color: #ea9999;
+  text-align: center;
+  color: white;
+  padding: none;
+  padding-top: 25px;
+  margin: 0;
+  font-size: 35px;
+}
+.City-Middle {
+  background-color: #ea9999;
+  color: white;
+  display: flex;
+  padding: 25px 15%;
+  margin: 0;
+  justify-content: center;
+  height: 400px;
+}
+
+.City-text {
+  margin: 0 35px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+}
+
+.City-text h3 {
+  font-size: 30px;
+  padding: none;
+  margin: none;
+  text-decoration: wavy underline;
+  font-style: italic;
+}
+.City-quote {
+  font-weight: bold;
+}
+
+.City-img-table {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.City-img-table-col {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.City-img-table-img img {
+  width: 150px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Bottom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#City-Break {
+  height: 50px;
+}
+.City-Bottom {
+  background-color: #dcc798;
+  display: flex;
+  padding: 25px 15%;
+  margin: 0;
+  justify-content: center;
+}
+
+.City-Bottom-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.City-Bottom-img img {
+  width: 250px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.City-Bottom-text {
+  padding: 0 50px;
+  width: 35%;
+  padding-top: 50px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Uncc.html ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.banner-uncc {
+  background-image: url(Photos/UnccBanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+.banner-uncc h1 {
+  margin: auto;
+  font-size: 45px;
+  font-family: Helvetica;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}

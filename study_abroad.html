@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>My Expereince</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+    <title>My Experience</title>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>
-          <a href="study_abroad.html">My Expereince</a>
+          <a href="study_abroad.html">My Experience</a>
           <ul class="dropdown">
             <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
           </ul>
         </li>
-
         <li><a href="Uncc.html">UNCC Study Abroad</a></li>
         <li><a href="Requirements.html">Help/Requirments</a></li>
       </ul>
@@ -26,46 +27,81 @@
       <h1>My Study Abroad Experience</h1>
       <p>
         For my study abroad trip I went to Pairs, France and Dubrovnik, Croatia
-        during the 2024 spring break. The trip was around 10 days total. Of the
-        ten, two consisted of only traveling.
+        during the 2024 spring break. The trip was around ten days total. Of the
+        ten, two consisted of traveling the entire day. For more infomation on
+        either city, see below and to see cultural differences click on either
+        city name.
       </p>
     </div>
-    <!-- <div class="wrapper">
-        <img id="left-photo" src="Photos/Me-France.png" alt="Me in France" />
-        <div class="side-text">
-          <a href="France.html"><h2>Paris, France</h2></a>
-          <p>
-            In France I spent around four of days. Classes started at 2px and
-            ended at 4pm so there was a good amount of time to do things in the
-            city.
-          </p>
-        </div>
+    <div id="bottom-text">
+      <div
+        class="cycle-slideshow"
+        data-cycle-fx="fadeout"
+        data-cycle-speed="200"
+        data-cycle-timeout="5000"
+      >
+        <img
+          class="side-photo"
+          src="Photos/Me-France1.png"
+          alt="Me in France"
+        />
+        <img
+          class="side-photo"
+          src="Photos/Me-France2.png"
+          alt="Me in France"
+        />
+        <img
+          class="side-photo"
+          src="Photos/Me-France3.png"
+          alt="Me in France"
+        />
       </div>
-      <div class="testing"></div>
-      <div class="wrapper2 end">
-        <div class="side-text">
-          <a href="Me-Croatia.html"><h2>Dubrovnik, Croatia</h2></a>
-          <p>In Croatia I spent around four of days</p>
-        </div>
-        <img id="right-photo" src="Photos/Me-Croatia.png" alt="Me in Croatia" />
-      </div> -->
-    <div class="wrapper1">
-      <img id="left-photo" src="Photos/Me-France.png" alt="Me in France" />
-      <div class="side-text">
+      <div class="inside-text">
         <a href="France.html"><h2>Paris, France</h2></a>
+        <p id="seperate-padding">
+          In Paris I spent around four days. Classes started at 11:00 am and
+          ended at 4:00 pm so there was a good amount of time to do things in
+          the city especially since most places close around 2:00 am. Around the
+          popular tourist locations practically all people spoke english
+          although the further you get away, from those locations the locals
+          tend to only speak french.
+        </p>
+        <a href="Croatia.html"><h2>Dubrovnik, Croatia</h2></a>
         <p>
-          In France I spent around four of days. Classes started at 11am and
-          ended at 4pm so there was a good amount of time to do things in the
-          city.
+          In Dubrovnik I also spent around four days. Dubrovnik is a small
+          Coastal city and my trip was during an off season for tourism as the
+          Town was cold. For this reason there wasn't as much to do as in Paris.
+          Also, many places tended to close earlier than Paris, around 9:00 pm.
+          The majority of locals spoke English but less so than in Paris. The
+          beauty of the city consisted of the surrounding landscape and the
+          architecture.
         </p>
       </div>
-    </div>
-    <div class="wrapper1">
-      <div class="side-text">
-        <a href="Me-Croatia.html"><h2>Dubrovnik, Croatia</h2></a>
-        <p>In Croatia I spent around four of days</p>
+      <div
+        class="cycle-slideshow"
+        data-cycle-fx="fadeout"
+        data-cycle-speed="200"
+        data-cycle-timeout="5000"
+      >
+        <img
+          class="side-photo"
+          src="Photos/Me-Croatia1.png"
+          alt="Me in Croatia"
+        />
+        <img
+          class="side-photo"
+          src="Photos/Me-Croatia2.png"
+          alt="Me in Croatia"
+        />
+        <img
+          class="side-photo"
+          src="Photos/Me-Croatia3.png"
+          alt="Me in Croatia"
+        />
       </div>
-      <img id="right-photo" src="Photos/Me-Croatia.png" alt="Me in Croatia" />
     </div>
+    <footer>
+      <p>&copy; 2024 Chirstopher Cuartas</p>
+    </footer>
   </body>
 </html>
