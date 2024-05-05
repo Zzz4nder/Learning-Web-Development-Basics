@@ -3,19 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://malsup.github.io/jquery.cycle2.js"></script>
-    <script src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js" defer></script>
+    <script
+      src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js"
+      defer
+    ></script>
     <script src="scripts/typeit.js" defer></script>
-
     <title>Home</title>
+  </head>
+  <body>
     <nav>
       <ul>
-        <li><a href=index.html>Home</a></li>
         <li>
-          <a href="study_abroad.html">My Expereince</a>
+          <a href="index.html"><u>Home</u></a>
+        </li>
+        <li>
+          <a href="study_abroad.html">My Experience</a>
           <ul class="dropdown">
             <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
@@ -26,17 +32,15 @@
         <li><a href="Requirements.html">Help/Requirments</a></li>
       </ul>
     </nav>
-  </head>
-  <body>
     <div class="banner-index">
       <h1 id="index-h1">Grow Globally, Learn Limitlessly</h1>
     </div>
     <div class="info">
-      <h2 class="section-title">Welcome!</h1>
+      <h2 class="section-title">Welcome!</h2>
       <p class="text">
         Hello welcome to my Guide to Study Abroad at UNCC! Here you can find how
         the requirements/where to start if you want to Study Abroad, My
-        Experience studying aborad and where to get some culture expereinces
+        Experience studying aborad and where to get some culture Experiences
         without leaving our campus!
       </p>
       <p class="text">
@@ -55,23 +59,33 @@
       </p>
     </div>
     <div class="index-photos">
-    <figure>
-        <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="5000">
+      <figure>
+        <div
+          class="cycle-slideshow"
+          data-cycle-fx="fadeout"
+          data-cycle-speed="200"
+          data-cycle-timeout="5000"
+        >
           <img src="Photos/Paris1.png" alt="" />
           <img src="Photos/Paris2.png" alt="" />
           <img src="Photos/Paris3.png" alt="" />
         </div>
-        <figcaption><a href="France.html"  id="France">France</a></figcaption>
+        <figcaption><a href="France.html" id="France">France</a></figcaption>
       </figure>
       <figure>
-        <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-speed="200" data-cycle-timeout="5000">
+        <div
+          class="cycle-slideshow"
+          data-cycle-fx="fadeout"
+          data-cycle-speed="200"
+          data-cycle-timeout="5000"
+        >
           <img src="Photos/Croatia1.png" alt="" />
           <img src="Photos/Croatia2.png" alt="" />
           <img src="Photos/Croatia3.png" alt="" />
         </div>
         <figcaption><a href="Croatia.html" id="Croatia">Croatia</a></figcaption>
-    </figure>
-  </div>
+      </figure>
+    </div>
     <div class="about-me">
       <h3 class="section-title">About Me</h3>
       <p class="text">
@@ -96,5 +110,5 @@
     <footer>
       <p>&copy; 2024 Chirstopher Cuartas</p>
     </footer>
-</body>
+  </body>
 </html>

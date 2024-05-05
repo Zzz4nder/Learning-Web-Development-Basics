@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="scripts/requirments.js" defer></script>
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+      type="text/css"
     />
-    <link rel="stylesheet" href="/resources/demos/style.css" />
+    <link rel="stylesheet" href="/resources/demos/style.css" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
@@ -20,11 +22,13 @@
       });
     </script>
     <title>Home</title>
+  </head>
+  <body>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>
-          <a href="study_abroad.html">My Expereince</a>
+          <a href="study_abroad.html">My Experience</a>
           <ul class="dropdown">
             <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
@@ -32,57 +36,93 @@
         </li>
 
         <li><a href="Uncc.html">UNCC Study Abroad </a></li>
-        <li><a href="Requirements.html">Help/Requirments</a></li>
+        <li>
+          <a href="Requirements.html"><u>Help/Requirments</u></a>
+        </li>
       </ul>
     </nav>
-  </head>
-  <body>
-    <p>This is taken from the uncc application process</p>
-    <div id="accordion">
-      <h3>Complete Study Abroad 101</h3>
-      <div>
-        <p>
-          This is the first step to study abroad. You must take a free canvas
-          course to undertand how to study board and what UNCC offers.
-        </p>
+    <p id="disclaimer">
+      This is taken from the uncc application process.
+      <a
+        href="https://edabroad.charlotte.edu/students/application-process/how-apply/"
+        >Click Here</a
+      >
+      to view
+    </p>
+    <div id="gap-for-footer">
+      <div id="accordion">
+        <h3>Complete Study Abroad 101</h3>
+        <div>
+          <p>
+            This is the first step to study abroad. You must take a free canvas
+            course to undertand how to study board and what UNCC offers.
+          </p>
+        </div>
+        <h3>Research Your Study Abroad Program</h3>
+        <div>
+          <p>
+            After completing 101, students will have a good understanding of the
+            different program types, what to consider when selecting a program,
+            how academic credit works, and how to search for approved programs
+            in the EA’s program database. Students who have already completed
+            101 and have identified a program they want to apply for can go to
+            step 3 to determine whether or not an appointment with an Advisor is
+            required.
+          </p>
+        </div>
+        <h3>Meet with a Education Aborad Advisor</h3>
+        <div>
+          <p>
+            Meeting with an advisor in EA may be required before a student can
+            request access to an application. Refer to the chart below to see
+            whether or not a meeting is required, based on the program type
+            you’re interested in applying for. If you’re unsure of the program
+            type, head back to Study Abroad 101 to learn more.
+          </p>
+        </div>
+        <h3>Apply</h3>
+        <div>
+          <p>
+            <b>For faculty-led programs</b>, once you’ve completed Study Abroad
+            101 and have identified a program of interest, you may go ahead and
+            click the Apply Now button on the brochure page of the program that
+            interests you. If applications are not yet open, the program’s
+            brochure page will have an I’m Interested! button that you may click
+            to receive updates when applications do open. Don’t forget: once you
+            begin your application, you’ll have to complete all requirements and
+            click Submit before the deadline in order for the Faculty Director
+            to successfully review your responses.
+          </p>
+          <p>
+            <b>For all other programs.</b> Once a student has selected the
+            program they would like to apply to, they will need to request
+            access to the application via an online Google Form. As a reminder,
+            only students who have completed Study Abroad 101 and who have met
+            with with an advisor (if required) will be given access to an
+            application. Please allow up to two business days for the
+            application request to be granted. Students will be sent an email
+            once the application has been created.
+          </p>
+          <div class="apply-here">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfJakx2N4ktm-EElrVudCeAraAZvqvovgagyw3Jrf6hiSNong/viewform"
+              >Apply Here!!!</a
+            >
+          </div>
+        </div>
       </div>
-      <h3>Research Your Study Abroad Program</h3>
-      <div>
-        <p>
-          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
-          porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non
-          quam. In suscipit faucibus urna.
-        </p>
-      </div>
-      <h3>Meet with a Education Aborad Advisor</h3>
-      <div>
-        <p>
-          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
-          lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
-          Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
-          commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis
-          leo purus venenatis dui.
-        </p>
-      </div>
-      <h3>Apply</h3>
-      <div>
-        <p>
-          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-          mauris vel est.
-        </p>
-        <p>
-          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
-          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos.
-        </p>
-        <ul>
-          <li>List item one</li>
-          <li>List item two</li>
-          <li>List item three</li>
-        </ul>
+      <div class="help-form">
+        <form id="contact-form">
+          <h4>Questions/Contact</h4>
+          <label for="name">Name:</label> <br />
+          <input type="text" id="name" />
+          <label for="email">Email:</label> <br />
+          <input type="email" id="email" />
+          <label for="message">Questions/Concerns?</label> <br />
+          <textarea id="message"></textarea>
+          <input type="submit" id="submit" value="submit" />
+        </form>
+        <p id="thank-you" style="display: none">Thank you for your message!</p>
       </div>
     </div>
     <footer>

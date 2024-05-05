@@ -3,31 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       src="https://unpkg.com/typeit@8.8.3/dist/index.umd.js"
       defer
     ></script>
     <script src="scripts/typeit.js" defer></script>
+    <script src="scripts/AJAX.js" defer></script>
     <title>Home</title>
+  </head>
+  <body>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li>
-          <a href="study_abroad.html">My Expereince</a>
+          <a href="study_abroad.html">My Experience</a>
           <ul class="dropdown">
             <li><a href="France.html">Paris, France</a></li>
             <li><a href="Croatia.html">Dubrovnik, Croatia</a></li>
           </ul>
         </li>
 
-        <li><a href="Uncc.html">UNCC Study Abroad</a></li>
+        <li>
+          <a href="Uncc.html"><u>UNCC Study Abroad</u></a>
+        </li>
         <li><a href="Requirements.html">Help/Requirments</a></li>
       </ul>
     </nav>
-  </head>
-  <body>
     <div class="banner-uncc">
       <h1 id="uncc-h1">unc charlotte</h1>
     </div>
@@ -43,9 +46,11 @@
       </p>
     </div>
     <div class="uncc-photos">
-      <figure>
+      <div class="uncc-photos-col">
         <img src="Photos/International-Festival.jpg" alt="" />
-        <figcaption>International Festival</figcaption>
+        <a href="https://ifest.charlotte.edu/"
+          ><h3>International Festival</h3></a
+        >
         <p>
           The International Festival is a yearly event hosted by UNC Charlotte.
           This festival celebrates diversity, music, and food from over 50
@@ -58,16 +63,78 @@
           opportunity to participate in different cultural traditions and
           exposure to diversity.
         </p>
-      </figure>
-      <figure>
+      </div>
+      <div class="uncc-photos-col">
         <img src="Photos/flag.png" alt="" />
-      </figure>
-      <figure>
+        <a
+          href="https://isso.charlotte.edu/programs-workshops/cross-cultural-programs/international-friendship-culture-exchange-program"
+          ><h3>Friendship and Cultural Exchange Program (FACE)</h3></a
+        >
+        <p>
+          This semester I joined the FACE Program and I highly regret not
+          participating sooner. This program provides the opportunity for UNC
+          Charlotte and international students to meet weekly and participate in
+          activities to learn more about one another and build friendships.
+          Through this, I made friends from Palestine and India and was able to
+          learn more about each other.
+        </p>
+      </div>
+      <div class="uncc-photos-col">
         <img src="Photos/CoffeeHour.jpg" alt="" />
+        <a
+          href="https://isso.charlotte.edu/programs-workshops/cross-cultural-programs/international-coffee-hour"
+          ><h3>International Coffee Hour</h3></a
+        >
+        <p>
+          International Coffee Hour is an event that takes place on the first
+          and third Thursdays of the month. This event provides the opportunity
+          for UNC Charlotte and international students to meet, play games, and
+          have great conversations. Through this, I was able to build
+          cross-cultural friendships and gain more knowledge about different
+          cultures from countries such as the Philippines and India.
+        </p>
+      </div>
     </div>
-  </figure>
-  <footer>
-    <p>&copy; 2024 Chirstopher Cuartas</p>
-  </footer>
+    <div class="clubs">
+      <div class="buttons">
+        <h3>Event/Club <br />Descriptions!</h3>
+        <button id="club1">International Festival</button>
+        <button id="club2">
+          Friendship and Cultural <br />
+          Exchange Program
+        </button>
+        <button id="club3">International Coffee Hour</button>
+      </div>
+      <div class="description">
+        <p id="description">
+          The International Festival is held on the UNC Charlotte campus in and
+          around the Barnhardt Student Activity Center (SAC). The International
+          Festival is centered around booths arranged in colorful marketplace
+          style representing the cultures of over 35 nations. The booths are
+          staffed by UNC Charlotte international students and members of
+          Charlotte’s international community and feature art, crafts and
+          costumes from each participating country. Many booths offer
+          international food for sale. Festival entry and parking are FREE! The
+          International Festival is open to the public. We highly recommend you
+          consider bringing cash with you to the event. While some booths may
+          accept credit cards, many only accept cash; there are several ATMs on
+          campus, but in past years, the lines can be quite long! <br />
+          Throughout the day the music and dance of a variety of nations will be
+          presented on indoor and outdoor stages. In addition, the International
+          Festival, which is family-oriented, offers a number of elements such
+          as mimes and face painting designed especially for children.
+        </p>
+      </div>
+    </div>
+    <div class="more-info">
+      <p>
+        For more informmation about clubs,
+        <a href="https://ninerengage.charlotte.edu/">click here</a> or visit
+        UNCCs Niner engage to see current events and clubs!
+      </p>
+    </div>
+    <footer>
+      <p>&copy; 2024 Chirstopher Cuartas</p>
+    </footer>
   </body>
 </html>
